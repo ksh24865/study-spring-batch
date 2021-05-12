@@ -10,8 +10,9 @@ import org.springframework.context.annotation.Configuration;
 @EnableBatchProcessing
 @Configuration
 public class TestJobConfig {
+
     @Bean
-    public JobLauncherTestUtils jobLauncherTestUtils(){
+    public JobLauncherTestUtils jobLauncherTestUtils() {
         return new JobLauncherTestUtils();
     }
 }
